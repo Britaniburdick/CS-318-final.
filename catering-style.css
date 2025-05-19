@@ -1,0 +1,190 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/textured-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+header {
+    height: 25vh;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+header .logo {
+    margin: 1% 0 0 1%;
+    height: inherit;
+    width: 30%;
+}
+
+.logo img {
+    height: inherit;
+    width: auto;
+}
+
+.sign-title {
+    background-image: url("../images/sign.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 200px;
+    text-align: center;
+    color: white;
+}
+
+.sign-title h1 {
+    line-height: 28vh;
+    font-weight: 400;
+}
+
+header .nav {
+    width: fit-content;
+    height: fit-content;
+    margin: 0.5% 1% 0 0;
+}
+
+.nav .nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu .nav-item {
+    display: inline;
+    float: left;
+}
+
+.nav-item a {
+    display: block;
+    padding: 8px;
+    background-color: #694343;
+    border: 1px solid black;
+    margin: 0 4px;
+    color: white;
+}
+
+.nav-item a:hover {
+    background-color: antiquewhite;
+    color: black;
+    padding: 10px;
+}
+
+.nav-item .active {
+    color: black;
+    background-color: antiquewhite;
+}
+
+main {
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    height: 60vh;
+    width: 40vw;
+    background-color: #694343;
+    color: white;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding-top: 20px;
+}
+
+input {
+    width: 80%;
+    height: 10%;
+    margin-bottom: 30px;
+}
+
+label {
+    font-size: 1.5rem;
+    width: 80%;
+}
+
+@media screen and (max-width: 800px){
+    header {
+        height: fit-content;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header .logo {
+        height: 130px;
+        width: auto;
+        margin-bottom: 2rem;
+    }
+
+    .logo img {
+        height: 10rem;
+        width: auto;
+    }
+
+    .sign-title {
+        width: 18rem;
+        order:3;
+        height: 18rem;
+    }
+
+    .sign-title h1 {
+        line-height: 22rem;
+        font-weight: 400;
+    }
+
+     main {
+        height: fit-content;
+        flex-flow: column nowrap;
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    form {
+        height: fit-content;
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    header .nav {
+        width: 100%;
+    }
+
+    .nav-menu .nav-item {
+        float: none;
+    }
+
+    .link-menu {
+        width: 80%;
+        padding: 0;
+    }
+
+    .menu-items {
+        width: 80%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 90%;
+    }
+
+     .sign-title {
+        width: 15rem;
+        order:3;
+        height: 15rem;
+    }
+
+    .sign-title h1 {
+        line-height: 18rem;
+        font-weight: 400;
+    }
+
+    .main-img {
+        width: 80%;
+    }
+}

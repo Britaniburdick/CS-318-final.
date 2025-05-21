@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url("../images/textured-background.jpg");
+    background-image: url("textured-background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
@@ -28,7 +28,7 @@ header .logo {
 }
 
 .sign-title {
-    background-image: url("../images/sign.png");
+    background-image: url("../sign.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     width: 200px;
